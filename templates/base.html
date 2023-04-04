@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="header-title">QT-SHOP</h1>
+        <div class="header-menu">
+          <a class="header-sec" href="index.html" style="color:black;">HOME</a>
+          <a class="header-sec">PRODUCT&#9660;</a>
+          <a class="header-sec">CATEGORIES&#9660;</a>
+          <a class="header-sec" href="about.html" >ABOUT</a>
+          <a class="header-sec" href="contact.html">CONTACT</a>
+        </div>
+        <br />
+        <hr style="color: rgb(207, 207, 207)" />
+      </div>
+      <div class="content">
+        <div class="content-items">
+          <div class="content-item">
+            <img src="/static/images/ao1.jpg" alt="" class="content-img" />
+            <div class="content-des">
+              <p class="content-ta">
+                <span class="content-la">Ao somi</span> March 5,2023 &#8226; 4
+              </p>
+              <p class="content-title">Gia 350.000 VND</p>
+            </div>
+          </div>
+          <div class="content-item">
+            <img src="/static/images/ao2.jpg" alt="" class="content-img" />
+            <div class="content-des">
+              <p class="content-ta">
+                <span class="content-la">ao thun</span> March 4,2023 &#8226; 4
+              </p>
+              <p class="content-title">250.000 VND</p>
+            </div>
+          </div>    
+          <div class="content-item">
+            <img src="/static/images/ao3.jpg" alt="" class="content-img" />
+            <div class="content-des">
+              <p class="content-ta">
+                <span class="content-la">Combo1</span> March 5,2023 &#8226; 4
+              </p>
+              <p class="content-title">850.000 VND</p>
+            </div>
+          </div>
+          <div class="content-item">
+            <img src="/static/images/ao4.jpg" alt="" class="content-img" />
+            <div class="content-des">
+              <p class="content-ta">
+                <span class="content-la">Combo 2</span> March 5,2023 &#8226; 4
+              </p>
+              <p class="content-title">520.000 VND</p>
+            </div>
+          </div>
+        </div>
+        <div class="content-categories">
+          <p class="cate">Categories</p>
+          <div class="cate-list">
+            <div class="cate-item">
+              <p class="cate-name">Shirt</p>
+              <p class="cate-num">(4)</p>
+            </div>
+            <div class="cate-item">
+              <p class="cate-name">Hoodie/p>
+              <p class="cate-num">(12)</p>
+            </div>
+            <div class="cate-item">
+              <p class="cate-name">Pants</p>
+              <p class="cate-num">(3)</p>
+            </div>
+            <div class="cate-item">
+              <p class="cate-name">Hat</p>
+              <p class="cate-num">(6)</p>
+            </div>
+            <div class="cate-item">
+              <p class="cate-name">Shoes</p>
+              <p class="cate-num">(9)</p>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+            <ul class="pagi">
+              <li class="pagi-item">Pre</li>
+              <li class="pagi-item">1</li>
+              <li class="pagi-item">2</li>
+              <li class="pagi-item">3</li>
+              <li class="pagi-item">Next</li>
+            </ul>
+        </div>
+      </div>
+    </div> 
+    <p class="footer">QuangTran</p>
+    <div class="chatbox">
+      <div class="chatbox__support">
+          <div class="chatbox__header">
+              <div class="chatbox__image--header">
+                  <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+              </div>
+              <div class="chatbox__content--header">
+                  <h4 class="chatbox__heading--header">Chat support</h4>
+                  <p class="chatbox__description--header">Hi. My name is QT-Shop. How can I help you?</p>
+              </div>
+          </div>
+          <div class="chatbox__messages">
+              <div></div>
+          </div>
+          <div class="chatbox__footer">
+              <input type="text" class="input-ne" placeholder="Write a message...">
+              <button class="chatbox__send--footer send__button">Send</button>
+          </div>
+      </div>
+      <div class="chatbox__button">
+          <button><img  class="chat-but-img" src="{{ url_for('static', filename='images/chat-balloon.png') }}" /></button>
+      </div>
+  </div>
+  </body>
+</html>
+
+    
+</div>
+
+    <script  type = text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson}};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
